@@ -62,6 +62,7 @@ private fun setCodeEditorFactory(
 ): CodeEditor {
   val editor = CodeEditor(context)
   val typeface = Typeface.createFromAsset(context.assets, "JetBrainsMono-Regular.ttf")
+  val theme = if (isDarkMode) "darcula" else "quietlight"
 
   editor.apply {
     setText(state.content)
@@ -71,18 +72,18 @@ private fun setCodeEditorFactory(
 
     FileProviderRegistry.getInstance().addFileProvider(AssetsFileResolver(context.assets))
     val themeRegistry = ThemeRegistry.getInstance()
-    val path = "editor/textmate/darcula.json"
+    val path = "editor/textmate/$theme.json"
     themeRegistry.loadTheme(
       ThemeModel(
         IThemeSource.fromInputStream(
           FileProviderRegistry.getInstance().tryGetInputStream(path), path, null
-        ), "darcula"
+        ), theme
       )
     )
 
-    themeRegistry.setTheme("darcula")
+    themeRegistry.setTheme(theme)
 
-    ThemeRegistry.getInstance().setTheme("darcula")
+    ThemeRegistry.getInstance().setTheme(theme)
     GrammarRegistry.getInstance().loadGrammars("editor/textmate/languages.json")
 
     if (colorScheme !is TextMateColorScheme) {
