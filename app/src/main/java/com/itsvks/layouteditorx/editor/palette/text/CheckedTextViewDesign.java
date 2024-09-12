@@ -3,10 +3,13 @@ package com.itsvks.layouteditorx.editor.palette.text;
 import android.widget.CheckedTextView;
 import android.content.Context;
 import android.graphics.Canvas;
-
+import android.annotation.SuppressLint;
 import com.itsvks.layouteditorx.Constants;
 import com.itsvks.layouteditorx.utils.Utils;
 
+
+
+@SuppressLint("AppCompatCustomView")
 public class CheckedTextViewDesign extends CheckedTextView {
  
   private boolean drawStrokeEnabled;
