@@ -7,7 +7,9 @@ import android.widget.AutoCompleteTextView;
 import com.itsvks.layouteditorx.Constants;
 import com.itsvks.layouteditorx.utils.Utils;
 
-public class AutoCompleteTextViewDesign extends AppCompatAutoCompleteTextView { 
+
+@SuppressLint("AppCompatCustomView")
+public class AutoCompleteTextViewDesign extends AutoCompleteTextView { 
   
   private boolean drawStrokeEnabled;
   private boolean isBlueprint;
