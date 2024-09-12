@@ -4,3 +4,13 @@ plugins {
   alias(libs.plugins.kotlin.android) apply false
   alias(libs.plugins.kotlin.compose) apply false
 }
+
+android {
+    lintOptions {
+        // Enable lint auto-fix
+        checkReleaseBuilds true
+        // Optional: Disable lint for certain tasks if needed
+        // disable 'LintWarning'
+    }
+}
+
