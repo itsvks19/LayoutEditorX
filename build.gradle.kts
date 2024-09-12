@@ -8,9 +8,8 @@ plugins {
 android {
     lintOptions {
         // Enable lint auto-fix
-        checkReleaseBuilds true
-        // Optional: Disable lint for certain tasks if needed
-        // disable 'LintWarning'
+        isCheckReleaseBuilds = true
+        // Optional: Specify the lint checks to disable if needed
+        // disable.add("LintWarning")
     }
 }
-
