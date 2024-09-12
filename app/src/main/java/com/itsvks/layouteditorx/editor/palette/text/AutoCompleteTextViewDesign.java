@@ -3,7 +3,7 @@ package com.itsvks.layouteditorx.editor.palette.text;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.widget.AutoCompleteTextView;
-
+import android.annotation.SuppressLint;
 import com.itsvks.layouteditorx.Constants;
 import com.itsvks.layouteditorx.utils.Utils;
 
