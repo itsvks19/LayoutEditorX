@@ -1,7 +1,6 @@
+<div align="center">
 
 ![Banner](/images/app-banner.png "app_banner")
-
-<div align="center">
 
 [![Latest release](https://img.shields.io/github/v/release/itsvks19/LayoutEditorX?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/itsvks19/LayoutEditorX/releases/latest)
 ![Downloads](https://img.shields.io/github/downloads/itsvks19/LayoutEditorX/total?style=for-the-badge)
